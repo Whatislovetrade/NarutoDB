@@ -43,4 +43,10 @@ export default class SwapiService {
       return this.getResource(`/villages/${id}`);
     }
   }
+
+const swapi = new SwapiService()
+  
+swapi.getAllVillages().then((body) => {
+  console.log(body)
+}) 
   
